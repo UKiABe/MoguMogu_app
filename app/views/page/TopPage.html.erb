@@ -57,9 +57,15 @@
     <!-- Header - set the background image for the header in the line below -->
     <header class="py-5 bg-image-full" style="background-image: url( <%= image_url('top_image.jpg') %>)">
       <div class="row">
-        <img class="img-fluid d-block col-sm-2 mx-auto" src="<%= image_url('icon_morning.png') %>" alt="">
-        <img class="img-fluid d-block col-sm-2 mx-auto" src="<%= image_url('icon_afternoon.jpg') %>" alt="">
-        <img class="img-fluid d-block col-sm-2 mx-auto" src="<%= image_url('icon_night.jpg') %>" alt="">
+        <div class="col-sm-4">
+          <img class="d-block mx-auto" src="<%= image_url('icon_morning.png') %>" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img class="d-block mx-auto" src="<%= image_url('icon_afternoon.jpg') %>" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img  class="d-block mx-auto" src="<%= image_url('icon_night.jpg') %>" alt="">
+        </div>
       </div>
     </header>
 
@@ -67,8 +73,7 @@
     <section class="py-5" id="sinryo">
       <div class="container">
         <h1>診療時間カレンダー</h1>
-        <p class="lead">Todo:カレンダー</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <div id="calendar"></div>
       </div>
     </section>
 
