@@ -2,5 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on 'turbolinks:load', ->
-  $('#calendar').fullCalendar {}
+  $('#calendar').fullCalendar
+    height: 600
+    header: [center: 'title']
   return
