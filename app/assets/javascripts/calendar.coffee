@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on 'turbolinks:load', ->
   $('#calendar').fullCalendar
-    height: 600
-    header: [center: 'title']
+    height: 500
+    header: right: 'prev, next today'
   return
