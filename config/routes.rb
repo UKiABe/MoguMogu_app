@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'page#TopPage'
-  get 'calendar', to: 'calendar#index'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
+  get '/mogumogu', to: 'page#TopPage'
 end
