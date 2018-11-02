@@ -18,7 +18,7 @@ gem 'jquery-rails'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'devise'
-gem 'rails_admin'
+gem 'activeadmin'
 gem 'cancancan'
 
 group :development, :test do
