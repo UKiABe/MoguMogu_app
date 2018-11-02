@@ -17,6 +17,9 @@ gem 'sprockets-rails'
 gem 'jquery-rails'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
+gem 'devise'
+gem 'rails_admin'
+gem 'cancancan'
 
 group :development, :test do
   gem 'sqlite3'
