@@ -20,6 +20,8 @@ gem 'momentjs-rails'
 gem 'devise'
 gem 'activeadmin'
 gem 'cancancan'
+gem 'activeadmin_quill_editor'
+gem 'quilljs-rails'
 
 group :development, :test do
   gem 'sqlite3'
