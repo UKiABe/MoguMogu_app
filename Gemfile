@@ -22,6 +22,7 @@ gem 'activeadmin'
 gem 'cancancan'
 gem 'activeadmin_quill_editor'
 gem 'quilljs-rails'
+gem "loofah", ">= 2.2.3"
 
 group :development, :test do
   gem 'sqlite3'
