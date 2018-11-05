@@ -19,6 +19,7 @@ gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'devise'
 gem 'activeadmin'
+gem 'cancancan'
 gem "loofah", ">= 2.2.3"
 gem 'wysiwyg-rails'
 gem "font-awesome-rails"
