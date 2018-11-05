@@ -20,9 +20,10 @@ gem 'momentjs-rails'
 gem 'devise'
 gem 'activeadmin'
 gem 'cancancan'
-gem 'activeadmin_quill_editor'
-gem 'quilljs-rails'
 gem "loofah", ">= 2.2.3"
+gem 'wysiwyg-rails'
+gem "font-awesome-rails"
+gem 'activeadmin_froala_editor'
 
 group :development, :test do
   gem 'sqlite3'

@@ -19,6 +19,4 @@
 //= require fullcalendar
 //= require fullcalendar/lang/ja
 //= require turbolinks
-//= require quill.min
-//= require quill.global
 //= require_tree .
