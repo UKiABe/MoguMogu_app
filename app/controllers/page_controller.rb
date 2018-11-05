@@ -7,12 +7,12 @@ class PageController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(book_params)
+    @blog = Blog.new(blog_params)
 
   end
 
   private
-    def book_params
+    def blog_params
       params.require(:blog).permit(:content)
     end
 end
