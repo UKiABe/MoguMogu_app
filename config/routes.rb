@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'page#TopPage'
   get '/blog', to: 'page#blog'
-  post '/admin/blogs', to: 'page#create'
+  get '/blog/:id', to: 'page#show'
 end

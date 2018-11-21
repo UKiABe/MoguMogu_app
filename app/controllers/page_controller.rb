@@ -1,18 +1,15 @@
 class PageController < ApplicationController
   def TopPage
+    @blogs = Blog.where(category_id: 1).order(created_at: :asc).limit(5)
+    @dishes = Blog.where(category_id: 2).order(created_at: :asc).limit(5)
   end
 
   def blog
     @blogs = Blog.all
   end
 
-  def create
-    @blog = Blog.new(blog_params)
-
+  def show
+    @blog = Blog.find(params[:id])
+    @category = Blog.find(params[:id]).category
   end
-
-  private
-    def blog_params
-      params.require(:blog).permit(:content)
-    end
 end

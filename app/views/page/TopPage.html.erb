@@ -43,6 +43,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#access">アクセス</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">ブログ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -90,6 +93,31 @@
       <div class="container">
         <h1>当院からのお知らせ</h1>
         <p class="lead">ToDo:おしらせリンク表示</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="border rounded col-sm-6 mx-auto">
+            <h1 class="page-header">新着情報</h1>
+            <hr>
+            <% @blogs.each do |blog| %>
+              <%= link_to blog.title, "blog/#{blog.id}" %>
+              <div class="text-right"><%= blog.created_at %></div>
+              <hr>
+            <% end %>
+          </div>
+          <div class="border rounded col-sm-6 mx-auto">
+            <h1>今週のごはん</h1>
+            <hr>
+            <% @dishes.each do |dish| %>
+              <%= dish.created_at %>
+              <div class="center"><%= link_to dish.title, dish %></div>
+              <hr>
+            <% end %>
+          </div>
+        </div>
       </div>
     </section>
 
