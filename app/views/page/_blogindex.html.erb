@@ -1,0 +1,28 @@
+<div class="container">
+<% @blogs.each do |blog| %>
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="post-preview">
+        <a href="blog/<%= blog.id %>">
+          <h2 class="post-title">
+            <%= blog.title.html_safe if blog.title? %>
+          </h2>
+          <p>
+            <%= truncate(blog.content.html_safe, length: 30) %>
+          </p>
+        </a>
+        <% cate= blog.category %>
+        <p class="post-meta"><%= "カテゴリ:" + cate.category if cate %>  投稿日: <%= blog.created_at.strftime("%Y年%m月%d日") %></p>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <% end %>
+      <!-- Pager -->
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="clearfix">
+          <a class="btn btn-info float-right" href="#">過去の記事 &rarr;</a>
+        </div>
+      </div>
+</div>
+<hr>
