@@ -5,7 +5,7 @@ class PageController < ApplicationController
   end
 
   def blog
-    @blogs = Blog.all
+    @blogs = Blog.all.order(created_at: :asc)
   end
 
   def blog_category
